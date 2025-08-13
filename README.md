@@ -49,3 +49,6 @@ spring.sql.init.platform=h2
 spring.jpa.show-sql=true
 ```
 
+## 🛠 Executando os Testes
+
+
