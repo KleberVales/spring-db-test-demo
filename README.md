@@ -60,4 +60,16 @@ Para rodar todos os testes:
 
 ## 📊 Fluxo dos Testes com Banco de Dados
 
+flowchart TD
+    A[Início do Teste] --> B[Spring Boot inicializa o contexto de teste]
+    B --> C[Hibernate cria tabelas no H2]
+    C --> D[Spring executa data.sql]
+    D --> E[Executa métodos de teste]
+    E --> F{Teste usa @Transactional?}
+    F -- Sim --> G[Após o teste, rollback das alterações]
+    F -- Não --> H[Alterações permanecem no banco]
+    G --> I[Fim do Teste]
+    H --> I[Fim do Teste]
+
+
 
