@@ -34,3 +34,18 @@ spring-db-test-demo/
 └── build.gradle.kts
 ```
 
+## ⚙️ Configuração do Banco H2 (perfil `test`)
+Arquivo `application-test.properties`:
+```properties
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.defer-datasource-initialization=true
+spring.sql.init.mode=always
+spring.sql.init.platform=h2
+spring.jpa.show-sql=true
+```
+
