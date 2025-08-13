@@ -58,4 +58,6 @@ Para rodar todos os testes:
 
 ```
 
+## 📊 Fluxo dos Testes com Banco de Dados
+
 
