@@ -11,3 +11,8 @@ Este projeto demonstra como realizar **testes com banco de dados** no Spring Boo
 
 ## 🚀 Funcionalidades
 
+- Testes unitários de repositórios JPA
+- Testes de integração de endpoints REST
+- População automática do banco com `data.sql` no perfil de teste
+- Rollback automático para manter isolamento entre os testes
+
