@@ -60,6 +60,7 @@ Para rodar todos os testes:
 
 ## 📊 Fluxo dos Testes com Banco de Dados
 
+```mermaid
 flowchart TD
     A[Início do Teste] --> B[Spring Boot inicializa o contexto de teste]
     B --> C[Hibernate cria tabelas no H2]
@@ -70,6 +71,7 @@ flowchart TD
     F -- Não --> H[Alterações permanecem no banco]
     G --> I[Fim do Teste]
     H --> I[Fim do Teste]
+```
 
 
 
