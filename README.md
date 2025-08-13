@@ -51,4 +51,11 @@ spring.jpa.show-sql=true
 
 ## 🛠 Executando os Testes
 
+Para rodar todos os testes:
+```bash
+
+./gradlew test
+
+```
+
 
